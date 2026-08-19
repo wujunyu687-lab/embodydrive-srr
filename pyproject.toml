@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embodydrive-srr"
+version = "0.1.0"
+description = "Wan2.1 robot video world-model training and SRR rollout evaluation"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {text = "MIT"}
+
+[project.scripts]
+embodydrive-train-g0 = "embodydrive.train_g0:main"
+embodydrive-train-srr = "embodydrive.train_srr:main"
+embodydrive-infer = "embodydrive.infer_full_episode:main"
+embodydrive-diagnose = "embodydrive.diagnose_rollout:main"
+embodydrive-validate = "embodydrive.validate_rollout_artifacts:main"
+embodydrive-gate = "embodydrive.gate_rollouts:main"
+
+[tool.setuptools.packages.find]
+include = ["embodydrive*", "videox_fun*"]

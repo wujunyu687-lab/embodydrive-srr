@@ -1,0 +1,11 @@
+accelerate==1.11.0
+diffusers==0.31.0
+einops==0.8.1
+imageio[ffmpeg,pyav]==2.37.2
+numpy==1.26.4
+opencv-python-headless==4.11.0.86
+Pillow==11.3.0
+safetensors==0.7.0
+tfrecord==1.14.6
+transformers==4.56.1
+typing_extensions==4.15.0
